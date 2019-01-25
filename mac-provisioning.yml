@@ -24,6 +24,7 @@
     homebrew_cask_packages:
       - { name: alfred } # utility
 #      - { name: atom } #text editor
+      - { name: bitwarden } # password manager
 #      - { name: chromium } #browser
 #      - { name: commander-one } #filer
       - { name: docker } #development
@@ -32,7 +33,7 @@
 #      - { name: firefox } # get from self-service.app
 #      - { name: google-chrome } # get from self-service.app
       - { name: google-japanese-ime } #Japanese Lauguage input
-#      - { name: google-drive } # no more available
+#      - { name: google-drive-file-stream } # get from self-service.app
 #      - { name: gotomeeting } # latest can be downloadable when you use
       - { name: iterm2 } #terminal
       - { name: keepassx } #password management
