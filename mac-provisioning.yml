@@ -1,0 +1,75 @@
+- hosts: localhost
+  connection: local
+
+  vars:
+    homebrew_taps:
+      - caskroom/cask
+# https://github.com/caskroom/homebrew-cask
+
+    homebrew_packages:
+      - { name: awscli }
+      - { name: colordiff }
+      - { name: coreutils }
+      - { name: curl }
+      - { name: git }
+      - { name: grep }
+#      - { name: ggrep  } # 201803 failed to install
+      - { name: htop }
+      - { name: mas }
+      - { name: tree }
+      - { name: vim }
+      - { name: watch }
+      - { name: wget }
+
+    homebrew_cask_packages:
+      - { name: alfred } # utility
+#      - { name: atom } #text editor
+#      - { name: chromium } #browser
+#      - { name: commander-one } #filer
+      - { name: docker } #development
+#      - { name: evernote }
+      - { name: filezilla }
+#      - { name: firefox } # get from self-service.app
+#      - { name: google-chrome } # get from self-service.app
+      - { name: google-japanese-ime } #Japanese Lauguage input
+#      - { name: google-drive } # no more available
+#      - { name: gotomeeting } # latest can be downloadable when you use
+      - { name: iterm2 } #terminal
+      - { name: keepassx } #password management
+      - { name: onyx } #utility
+      - { name: skitch } #image
+      - { name: shupapan } #image management
+#      - { name: Slak } # get from self-service.app
+      - { name: sublime-text } # text editor
+      - { name: spectacle } #desktop management
+      - { name: vagrant } #development
+      - { name: vagrant-manager } #development
+      - { name: virtualbox } #development
+#      - { name: vivaldi } #browser
+#      - { name: vlc } #video
+      - { name: vmware-remote-console } #vmware plug-in
+
+  tasks:
+    - name: homebrew update
+      homebrew:
+        update_homebrew: yes
+
+    - name: homebrew tap
+      homebrew_tap:
+        name: '{{ item }}'
+        state: present
+      with_items: '{{ homebrew_taps }}'
+
+# brew
+    - name: homebrew packages install
+      homebrew:
+        name: '{{ item.name }}'
+        state: '{{ item.state | default("present") }}'
+      with_items: '{{ homebrew_packages }}'
+
+# cask
+    - name: homebrew cask packages install
+      homebrew_cask: name={{ item.name }} state=installed
+      environment:
+        HOMEBREW_CASK_OPTS: "--appdir=/Applications"
+      with_items: '{{ homebrew_cask_packages }}'
