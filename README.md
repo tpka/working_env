@@ -2,7 +2,7 @@
 # Building Mac by Ansible+Homebrew
 This documentation describes step by step Mac provisioning process. It's based on SpringerNature pre-build Mac. 
  
-- updated: 7/March/2018 by Tomohiro Takatsuka
+- Written by: Tomohiro Takatsuka
 
 ## Environment
 
