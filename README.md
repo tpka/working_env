@@ -180,6 +180,9 @@ This is my personal preference :)
 		- Synced​Side​Bar: https://packagecontrol.io/packages/SyncedSideBarin
 		- Terminal: https://packagecontrol.io/packages/Terminal
 		- Trailing​Spaces: https://packagecontrol.io/packages/TrailingSpaces
+- powercli: setup
+	- powershell is required. run command, "pwsh -version" to check.
+	- check this site: https://blogs.vmware.com/PowerCLI/2018/03/installing-powercli-10-0-0-macos.html
 
 ## Reference
 
