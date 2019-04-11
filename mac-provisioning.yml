@@ -38,6 +38,7 @@
       - { name: iterm2 } #terminal
       - { name: keepassx } #password management
       - { name: onyx } #utility
+      - { name: powershell } #utility
       - { name: skitch } #image
       - { name: shupapan } #image management
 #      - { name: Slak } # get from self-service.app
