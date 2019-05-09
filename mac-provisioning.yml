@@ -44,6 +44,7 @@
 #      - { name: Slak } # get from self-service.app
       - { name: sublime-text } # text editor
       - { name: spectacle } #desktop management
+      - { name: speedtest-cli } #utility  
       - { name: vagrant } #development
       - { name: vagrant-manager } #development
       - { name: virtualbox } #development
