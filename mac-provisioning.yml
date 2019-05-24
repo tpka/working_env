@@ -23,6 +23,7 @@
 
     homebrew_cask_packages:
       - { name: alfred } # utility
+      - { name: android-file-transfer } # utility
 #      - { name: atom } #text editor
       - { name: bitwarden } # password manager
 #      - { name: chromium } #browser
