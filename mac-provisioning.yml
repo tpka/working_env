@@ -49,6 +49,7 @@
       - { name: vagrant } #development
       - { name: vagrant-manager } #development
       - { name: virtualbox } #development
+      - { name: visual-studio-code } # coding tool
 #      - { name: vivaldi } #browser
 #      - { name: vlc } #video
       - { name: vmware-remote-console } #vmware plug-in
