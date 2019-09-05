@@ -32,6 +32,7 @@
 #      - { name: evernote }
       - { name: filezilla }
 #      - { name: firefox } # get from self-service.app
+      - { name: google-cloud-sdk } 
 #      - { name: google-chrome } # get from self-service.app
       - { name: google-japanese-ime } #Japanese Lauguage input
 #      - { name: google-drive-file-stream } # get from self-service.app
