@@ -1,12 +1,14 @@
 
 # Building Mac by Ansible+Homebrew
+
 This documentation describes step by step Mac provisioning process. It's based on SpringerNature pre-build Mac. 
  
 - Written by: Tomohiro Takatsuka
+- As of Oct/2019
 
 ## Environment
 
-- macOS Sierra(ver.10.12.6)
+- macOS Majave(ver.10.14.6)
 	- built by SpringerNature Casper image
 
 ## Pre-Requirement
@@ -15,10 +17,6 @@ This documentation describes step by step Mac provisioning process. It's based o
 
 - Xcode
 	- require apple id
-
-```
-sudo xcodebuild -license
-```
 
 **install Homebrew**
 
@@ -46,7 +44,7 @@ $ ansible --version
 $ mkdir mac-provisioning-ansible
 $ echo 'localhost' > hosts
 $ vim xxxx.yml
-$ ansible-playbook -i hosts -vv xxx.yml
+$ ansible-playbook -i hosts -vv xxxh.yml
 ```
 - check status of ansible
 	- failed installing app.... etc
@@ -59,7 +57,10 @@ $ ansible-playbook -i hosts -vv xxx.yml
 - Adobe Acrobat DC
 - Cisco AnyConnect
 - Cisco Jabber
-- google Backup and Sync
+- FileZilla
+- Firefox
+- Google Chrome
+- Google Drive File Stream
 - MS Remote Desktop(app store)
 - Slack
 
