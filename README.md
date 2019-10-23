@@ -84,7 +84,7 @@ This is my personal preference :)
 - System Preference:
 	- Displays:
 		- change resolution
-		- NightShift:on
+		- NightShift:on <- Oct/2019 This cannot change due to policy on System Preferences
 		- hide mirroring option
 	- Dock:
 		- change position on right & cleanup
@@ -119,7 +119,7 @@ This is my personal preference :)
 
 **Application setup**
 
-- google Backup and Sync: setup
+- google Drive: setup
 - google Japanese input: setup
 	- change keyboard setting
 - browser bookmarks: restore
@@ -170,22 +170,32 @@ This is my personal preference :)
 - iterm2: setup
 	- iTerm2 > Install Shell Integration
 	- Profile location: ~/Library/Preferences/com.googlecode.iterm2.plist
-- sublimetext3: setup
-	- install package control
-	- Shortcut: command palette "Shift + Command + P"
-	- installed plugin
-		- all autocomplete: https://packagecontrol.io/packages/All%20Autocomplete
-		- Bracket​Highlighter: https://packagecontrol.io/packages/BracketHighlighter
-		- Google Search: https://packagecontrol.io/packages/Google%20Search
-		- markdown extended: https://packagecontrol.io/packages/Markdown%20Extended
-		- Monokai Extended: https://packagecontrol.io/packages/Monokai%20Extended
-		- SideBarEnhancements: https://packagecontrol.io/packages/SideBarEnhancements
-		- Synced​Side​Bar: https://packagecontrol.io/packages/SyncedSideBarin
-		- Terminal: https://packagecontrol.io/packages/Terminal
-		- Trailing​Spaces: https://packagecontrol.io/packages/TrailingSpaces
+#	- sublimetext3: setup
+#		- install package control
+#		- Shortcut: command palette "Shift + Command + P"
+#		- installed plugin
+#			- all autocomplete: https://packagecontrol.io/packages/All%20Autocomplete
+#			- Bracket​Highlighter: https://packagecontrol.io/packages/BracketHighlighter
+#			- Google Search: https://packagecontrol.io/packages/Google%20Search
+#			- markdown extended: https://packagecontrol.io/packages/Markdown%20Extended
+#			- Monokai Extended: https://packagecontrol.io/packages/Monokai%20Extended
+#			- SideBarEnhancements: https://packagecontrol.io/packages/SideBarEnhancements
+#			- Synced​Side​Bar: https://packagecontrol.io/packages/SyncedSideBarin
+#			- Terminal: https://packagecontrol.io/packages/Terminal
+#			- Trailing​Spaces: https://packagecontrol.io/packages/TrailingSpaces
 - powercli: setup
 	- powershell is required. run command, "pwsh -version" to check.
 	- check this site: https://blogs.vmware.com/PowerCLI/2018/03/installing-powercli-10-0-0-macos.html
+- Alfred
+	- Assign MacOS permissions
+		- Accessibility
+		- Full Disk Access
+- Spectacle
+	- Assign MacOS permissions
+		- Accessibility
+- Visual Studio Code
+	- 
+
 
 ## Reference
 
