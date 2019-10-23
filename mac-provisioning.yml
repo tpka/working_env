@@ -2,8 +2,8 @@
   connection: local
 
   vars:
-    homebrew_taps:
-      - caskroom/cask
+#   homebrew_taps:
+#      - caskroom/cask
 # https://github.com/caskroom/homebrew-cask
 
     homebrew_packages:
@@ -30,7 +30,7 @@
 #      - { name: commander-one } #filer
       - { name: docker } #development
 #      - { name: evernote }
-      - { name: filezilla }
+#      - { name: filezilla } # FAILED Oct/2019
 #      - { name: firefox } # get from self-service.app
       - { name: google-cloud-sdk } 
 #      - { name: google-chrome } # get from self-service.app
@@ -44,9 +44,9 @@
       - { name: skitch } #image
       - { name: shupapan } #image management
 #      - { name: Slak } # get from self-service.app
-      - { name: sublime-text } # text editor
+#      - { name: sublime-text } # text editor
       - { name: spectacle } #desktop management
-      - { name: speedtest-cli } #utility  
+#      - { name: speedtest-cli } #utility FAILED Oct/2019 
       - { name: vagrant } #development
       - { name: vagrant-manager } #development
       - { name: virtualbox } #development
@@ -60,11 +60,11 @@
       homebrew:
         update_homebrew: yes
 
-    - name: homebrew tap
-      homebrew_tap:
-        name: '{{ item }}'
-        state: present
-      with_items: '{{ homebrew_taps }}'
+#    - name: homebrew tap
+#      homebrew_tap:
+#        name: '{{ item }}'
+#        state: present
+#      with_items: '{{ homebrew_taps }}'
 
 # brew
     - name: homebrew packages install
