@@ -26,6 +26,8 @@ This documentation describes step by step Mac provisioning process. It's based o
 
 ``
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew --version
+brew tap homebrew/cask
 ``
 
 ## Prepare ansible and run the playbook
