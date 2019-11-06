@@ -193,6 +193,7 @@ This is my personal preference :)
 - Spectacle
 	- Assign MacOS permissions
 		- Accessibility
+	- Enable Launch at login
 - Visual Studio Code
 	- 
 
