@@ -16,6 +16,7 @@
 #      - { name: ggrep  } # 201803 failed to install
       - { name: htop }
       - { name: mas }
+      - { name: packer } 
       - { name: tree }
       - { name: vim }
       - { name: watch }
@@ -38,7 +39,7 @@
 #      - { name: google-drive-file-stream } # get from self-service.app
 #      - { name: gotomeeting } # latest can be downloadable when you use
       - { name: iterm2 } #terminal
-      - { name: keepassx } #password management
+#      - { name: keepassx } #password management
       - { name: onyx } #utility
       - { name: powershell } #utility
       - { name: skitch } #image
