@@ -48,6 +48,7 @@
 #      - { name: sublime-text } # text editor
       - { name: spectacle } #desktop management
 #      - { name: speedtest-cli } #utility FAILED Oct/2019 
+      - { name: terraform } #development
       - { name: vagrant } #development
       - { name: vagrant-manager } #development
       - { name: virtualbox } #development
