@@ -1,14 +1,14 @@
 
 # Building Mac by Ansible+Homebrew
 
-This documentation describes step by step Mac provisioning process. It's based on SpringerNature pre-build Mac. 
- 
+This documentation describes step by step Mac automated provisioning process. It's based on SpringerNature pre-build Mac.
+
 - Written by: Tomohiro Takatsuka
-- As of Oct/2019
+- As of Oct/2020
 
 ## Environment
 
-- macOS Majave(ver.10.14.6)
+- macOS Catalina(ver.10.15)
 	- built by SpringerNature Casper image
 
 ## Pre-Requirement
@@ -51,20 +51,21 @@ $ ansible-playbook -i hosts -vv xxxh.yml
 - check status of ansible
 	- failed installing app.... etc
 
-
 ## Post-Ansible setup
 
 **apps: install additional applications from SpringerNature self-service app**
 
-- Adobe Acrobat DC
 - Cisco AnyConnect
 - Cisco Jabber
 - FileZilla
 - Firefox
 - Google Chrome
 - Google Drive File Stream
-- MS Remote Desktop(app store)
+- Kofa Power PDF for Mac
+- MS Remote Desktop
 - Slack
+- SpringerNature WiFi
+- VLC
 
 **apps: install manually**
 
@@ -169,20 +170,20 @@ This is my personal preference :)
 		- https://superuser.com/questions/1127067/macos-keeps-asking-my-ssh-passphrase-since-i-updated-to-sierra
 - iterm2: setup
 	- iTerm2 > Install Shell Integration
-	- Profile location: ~/Library/Preferences/com.googlecode.iterm2.plist
-#	- sublimetext3: setup
-#		- install package control
-#		- Shortcut: command palette "Shift + Command + P"
-#		- installed plugin
-#			- all autocomplete: https://packagecontrol.io/packages/All%20Autocomplete
-#			- Bracket​Highlighter: https://packagecontrol.io/packages/BracketHighlighter
-#			- Google Search: https://packagecontrol.io/packages/Google%20Search
-#			- markdown extended: https://packagecontrol.io/packages/Markdown%20Extended
-#			- Monokai Extended: https://packagecontrol.io/packages/Monokai%20Extended
-#			- SideBarEnhancements: https://packagecontrol.io/packages/SideBarEnhancements
-#			- Synced​Side​Bar: https://packagecontrol.io/packages/SyncedSideBarin
-#			- Terminal: https://packagecontrol.io/packages/Terminal
-#			- Trailing​Spaces: https://packagecontrol.io/packages/TrailingSpaces
+	- Profile location: `~/Library/Preferences/com.googlecode.iterm2.plist`
+- sublimetext3: setup(this can be skipped as not much used anymore)
+	- install package control
+	- Shortcut: command palette "Shift + Command + P"
+	- installed plugin
+		- all autocomplete: https://packagecontrol.io/packages/All%20Autocomplete
+		- Bracket​Highlighter: https://packagecontrol.io/packages/BracketHighlighter
+		- Google Search: https://packagecontrol.io/packages/Google%20Search
+		- markdown extended: https://packagecontrol.io/packages/Markdown%20Extended
+		- Monokai Extended: https://packagecontrol.io/packages/Monokai%20Extended
+		- SideBarEnhancements: https://packagecontrol.io/packages/SideBarEnhancements
+		- Synced​Side​Bar: https://packagecontrol.io/packages/SyncedSideBarin
+		- Terminal: https://packagecontrol.io/packages/Terminal
+		- Trailing​Spaces: https://packagecontrol.io/packages/TrailingSpaces
 - powercli: setup
 	- powershell is required. run command, "pwsh -version" to check.
 	- check this site: https://blogs.vmware.com/PowerCLI/2018/03/installing-powercli-10-0-0-macos.html
@@ -195,7 +196,7 @@ This is my personal preference :)
 		- Accessibility
 	- Enable Launch at login
 - Visual Studio Code
-	- 
+	- Added later this section
 
 
 ## Reference
