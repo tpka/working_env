@@ -26,18 +26,19 @@
       - { name: alfred } # utility
       - { name: android-file-transfer } # utility
 #      - { name: atom } #text editor
-      - { name: bitwarden } # password manager
+      - { name: bitwarden } #password manager
+      - { name: brave-browser }
 #      - { name: chromium } #browser
 #      - { name: commander-one } #filer
       - { name: docker } #development
 #      - { name: evernote }
-#      - { name: filezilla } # FAILED Oct/2019
-#      - { name: firefox } # get from self-service.app
-      - { name: google-cloud-sdk } 
-#      - { name: google-chrome } # get from self-service.app
+#      - { name: filezilla } #FAILED Oct/2019
+#      - { name: firefox } #get from self-service.app
+#      - { name: google-cloud-sdk } #FAILED Oct/2020
+#      - { name: google-chrome } #get from self-service.app
       - { name: google-japanese-ime } #Japanese Lauguage input
-#      - { name: google-drive-file-stream } # get from self-service.app
-#      - { name: gotomeeting } # latest can be downloadable when you use
+#      - { name: google-drive-file-stream } #get from self-service.app
+#      - { name: gotomeeting } #latest can be downloadable when you use
       - { name: iterm2 } #terminal
 #      - { name: keepassx } #password management
       - { name: onyx } #utility
@@ -45,17 +46,17 @@
       - { name: skitch } #image
       - { name: shupapan } #image management
 #      - { name: Slak } # get from self-service.app
-#      - { name: sublime-text } # text editor
+#      - { name: sublime-text } #text editor
       - { name: spectacle } #desktop management
 #      - { name: speedtest-cli } #utility FAILED Oct/2019 
-      - { name: terraform } #development
+      - { name: sublime-text} #editor
       - { name: vagrant } #development
       - { name: vagrant-manager } #development
-      - { name: virtualbox } #development
-      - { name: visual-studio-code } # coding tool
+#      - { name: virtualbox } #development, FAILED Oct/2020
+      - { name: visual-studio-code } #editor
 #      - { name: vivaldi } #browser
 #      - { name: vlc } #video
-      - { name: vmware-remote-console } #vmware plug-in
+#      - { name: vmware-remote-console } #vmware plug-in, FAILED Oct/2020
 
   tasks:
     - name: homebrew update
