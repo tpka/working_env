@@ -21,14 +21,9 @@ This documentation describes step by step Mac automated provisioning process. It
 **install Homebrew**
 
 - https://brew.sh/
-- Add user to administrator
-- Run follwing command(with regular account/not root)
-
-``
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew --version
-brew tap homebrew/cask
-``
+- Run command on website.
+	- check once installed $ brew --version
+	- install cask $brew tap homebrew/cask
 
 ## Prepare ansible and run the playbook
 **install ansible**
@@ -46,7 +41,7 @@ $ ansible --version
 $ mkdir mac-provisioning-ansible
 $ echo 'localhost' > hosts
 $ vim xxxx.yml
-$ ansible-playbook -i hosts -vv xxxh.yml
+$ ansible-playbook -i hosts -vv xxx.yml
 ```
 - check status of ansible
 	- failed installing app.... etc
