@@ -61,42 +61,40 @@ $ ansible-playbook -i hosts -vv xxx.yml
 - Slack
 - SpringerNature WiFi
 - VLC
+- VMware Remote Console for Mac
 
 **apps: install manually**
 
-- Flash player
-	- Safari & Firefox
-	- Chromium
-- Royal TSX
-	- plugin:
-		- Remote Desktop
-		- Terminal
-		- VMware
+#- Flash player
+#	- Safari & Firefox
+#	- Chromium
 
 **Mac setup**
 
 This is my personal preference :)
 
 - System Preference:
-	- Displays:
-		- change resolution
-		- NightShift:on <- Oct/2019 This cannot change due to policy on System Preferences
-		- hide mirroring option
+	- General:
 	- Dock:
-		- change position on right & cleanup
+		- change position
 		- enable automatic hide
+	- Mission Control
+	- Siri
+		- disable
+	- Wallet & Apple Pay
+		- disable
+	- Printer:
+		- install from self-service.app
 	- Keyboard:
 		- add Japanese(Hiragana Google)
 		- Shortcut/Input Sources: check on "Selct the previous input source" and "Seletct next source in input menu"
-
-	- Mission Control
-		- HotCorner
-		- Dashboard: off
 	- Trackpad
 		- Tap to click
 		- Track Speed: Fastest
-	- Printer:
-		- install from self-service.app
+	- Displays:
+		- change resolution
+		- NightShift:on
+		- hide mirroring option
 	- TimeMachine: setup
 
 - Finder:(Preference)
@@ -115,7 +113,7 @@ This is my personal preference :)
 
 **Application setup**
 
-- google Drive: setup
+- google Drive:
 - google Japanese input: setup
 	- change keyboard setting
 - browser bookmarks: restore
@@ -126,12 +124,9 @@ This is my personal preference :)
 - Outlook(or mail.app): setup
 	- self-service.app for automatic setup
 	- setup signature
-- slack: setup
-- filezilla: restore setting
-	- setup key(SFTP:)
-	- ~/.config/filezilla subdirectory
+- slack:
 - remote desktop setting: restore setting
-- virtual box: setup
+- virtual box:
 - vagrant: setup
 	- test: vagrant up
 	- install plug-in
@@ -149,6 +144,10 @@ This is my personal preference :)
 	- .gitignore
 - .ssh directory
 	- fix permission
+- Symbolic link for git directory
+	- $ ln -s ln -s /Volumes/GoogleDrive/My\ Drive/git ~/git    ~
+- Screenshot saved location
+	- https://fukatsu.tech/mac-screenshot-path
 
 ```
     # chmod 700 .ssh/
@@ -164,8 +163,7 @@ This is my personal preference :)
 		- to remember pass phrase
 		- https://superuser.com/questions/1127067/macos-keeps-asking-my-ssh-passphrase-since-i-updated-to-sierra
 - iterm2: setup
-	- iTerm2 > Install Shell Integration
-	- Profile location: `~/Library/Preferences/com.googlecode.iterm2.plist`
+	- enable Sync by suing github account
 - sublimetext3: setup(this can be skipped as not much used anymore)
 	- install package control
 	- Shortcut: command palette "Shift + Command + P"
