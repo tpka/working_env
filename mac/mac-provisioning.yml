@@ -11,6 +11,7 @@
       - { name: colordiff }
       - { name: coreutils }
       - { name: curl }
+      - { name: gh } #github cli tool
       - { name: git }
       - { name: grep }
 #      - { name: ggrep  } # 201803 failed to install
