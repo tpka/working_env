@@ -8,6 +8,7 @@
 
     homebrew_packages:
       - { name: awscli }
+      - { name: cdrtools }
       - { name: colordiff }
       - { name: coreutils }
       - { name: curl }
@@ -17,7 +18,8 @@
 #      - { name: ggrep  } # 201803 failed to install
       - { name: htop }
       - { name: mas }
-      - { name: packer } 
+      - { name: packer }
+      - { name: telnet }
       - { name: tree }
       - { name: vim }
       - { name: watch }
