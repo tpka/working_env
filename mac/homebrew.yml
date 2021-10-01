@@ -1,0 +1,35 @@
+- hosts: localhost
+  connection: local
+
+  vars:
+    homebrew_packages:
+      - { name: awscli }
+      - { name: cdrtools }
+      - { name: colordiff }
+      - { name: coreutils }
+      - { name: curl }
+      - { name: gh } #github cli tool
+      - { name: git }
+      - { name: grep }
+      - { name: htop }
+      - { name: mas }
+      - { name: packer }
+      - { name: speedtest-cli }
+      - { name: telnet }
+      - { name: terraform }
+      - { name: tree }
+      - { name: vim }
+      - { name: watch }
+      - { name: wget }
+
+  tasks:
+    - name: homebrew update
+      homebrew:
+        update_homebrew: yes
+
+# brew
+    - name: homebrew packages install
+      homebrew:
+        name: '{{ item.name }}'
+        state: '{{ item.state | default("present") }}'
+      with_items: '{{ homebrew_packages }}'

@@ -1,0 +1,49 @@
+- hosts: localhost
+  connection: local
+
+  vars:
+    homebrew_cask_packages:
+      - { name: alfred }
+      - { name: android-file-transfer }
+      - { name: bitwarden }
+      - { name: docker }
+      - { name: firefox }
+      - { name: google-cloud-sdk }
+      - { name: google-chrome }
+      - { name: google-japanese-ime }
+#      - { name: google-drive}
+      - { name: iterm2 } #terminal
+      - { name: keepassx }
+      - { name: notion } #utility
+      - { name: onyx } #utility
+      - { name: powershell } #utility
+      - { name: qlcolorcode } #QuickLookup plugin
+      - { name: qlmarkdown } #QuickLookup plugin
+      - { name: qlstephen } #QuickLookup plugin
+      - { name: quicklook-json } #QuickLookup plugin
+      - { name: royal-tsx }
+      - { name: skitch }
+      - { name: slack }
+      - { name: sublime-text }
+      - { name: spectacle }
+      - { name: sublime-text}
+      - { name: the-unarchiver}
+      - { name: vagrant }
+      - { name: vagrant-manager }
+      - { name: virtualbox } 
+      - { name: visual-studio-code }
+      - { name: vlc }
+
+  tasks:
+    - name: homebrew update
+      homebrew:
+        update_homebrew: yes
+
+# cask
+    - name: homebrew cask packages install
+      homebrew_cask:
+        name: "{{ item.name }}"
+        state: present
+        install_options: 'appdir=/Applications'
+        accept_external_apps: True
+      with_items: '{{ homebrew_cask_packages }}'
