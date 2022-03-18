@@ -10,6 +10,7 @@
       - { name: curl }
       - { name: gh } #github cli tool
       - { name: git }
+      - { name: gnu-sed }
       - { name: grep }
       - { name: htop }
       - { name: mas }
