@@ -8,7 +8,6 @@
       - { name: colordiff }
       - { name: coreutils }
       - { name: curl }
-      - { name: dos2unix }
       - { name: gh } #github cli tool
       - { name: git }
       - { name: gnu-sed }
