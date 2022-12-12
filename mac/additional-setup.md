@@ -67,14 +67,15 @@ This documentation describes how to setup Mac for work. It's my personal prefere
 - Outlook: setup
 	- just login with AzureAD
 - slack:
-- bash alias
+- bash(.zshrc) alias
 	- .bash_profile, bashrc
+	- .zprofile, .zshrc
 - git: setup
 	- git init
 	- git clone
 	- .gitignore
-- Symbolic link for git directory
-	- $ ln -s ln -s /Volumes/GoogleDrive/My\ Drive/git ~/git    ~
+- Symbolic link for working directory
+	- $ ln -s /Volumes/GoogleDrive/My\ Drive/git ~/git
 - Screenshot saved location
 	- https://fukatsu.tech/mac-screenshot-path
 - .ssh directory
@@ -92,19 +93,6 @@ This documentation describes how to setup Mac for work. It's my personal prefere
 		- https://superuser.com/questions/1127067/macos-keeps-asking-my-ssh-passphrase-since-i-updated-to-sierra
 - iterm2: setup
 	- enable Sync by suing github account
-- sublimetext3: setup(this can be skipped as not much used anymore)
-	- install package control
-	- Shortcut: command palette "Shift + Command + P"
-	- installed plugin
-		- all autocomplete: https://packagecontrol.io/packages/All%20Autocomplete
-		- Bracket​Highlighter: https://packagecontrol.io/packages/BracketHighlighter
-		- Google Search: https://packagecontrol.io/packages/Google%20Search
-		- markdown extended: https://packagecontrol.io/packages/Markdown%20Extended
-		- Monokai Extended: https://packagecontrol.io/packages/Monokai%20Extended
-		- SideBarEnhancements: https://packagecontrol.io/packages/SideBarEnhancements
-		- Synced​Side​Bar: https://packagecontrol.io/packages/SyncedSideBarin
-		- Terminal: https://packagecontrol.io/packages/Terminal
-		- Trailing​Spaces: https://packagecontrol.io/packages/TrailingSpaces
 - powercli: setup
 	- powershell is required. run command, "pwsh -version" to check.
 	- check this site: https://blogs.vmware.com/PowerCLI/2018/03/installing-powercli-10-0-0-macos.html
@@ -119,12 +107,5 @@ This documentation describes how to setup Mac for work. It's my personal prefere
 - Visual Studio Code
 	- Added later this section
 - virtual box:
-- vagrant: setup
-	- test: vagrant up
-	- install plug-in
-		- $ vagrant plugin install vagrant-hostmanager
-		- $ vagrant plugin install vagrant-hosts
-		- $ vagrant plugin install vagrant-vbox-snapshot
-		- $ vagrant plugin install sahara
 - docker: setup
 	- initial setup: docker mac client
