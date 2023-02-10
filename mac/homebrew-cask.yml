@@ -3,6 +3,7 @@
 
   vars:
     homebrew_cask_packages:
+      - { name: 1password }
       - { name: alfred }
       - { name: android-file-transfer }
       - { name: bitwarden }
@@ -17,16 +18,16 @@
       - { name: notion } #utility
       - { name: onyx } #utility
       - { name: powershell } #utility
-      - { name: qlcolorcode } #QuickLookup plugin
-      - { name: qlmarkdown } #QuickLookup plugin
-      - { name: qlstephen } #QuickLookup plugin
-      - { name: quicklook-json } #QuickLookup plugin
+#      - { name: qlcolorcode } #QuickLookup plugin
+#      - { name: qlmarkdown } #QuickLookup plugin
+#      - { name: qlstephen } #QuickLookup plugin
+#      - { name: quicklook-json } #QuickLookup plugin
       - { name: royal-tsx }
       - { name: skitch }
       - { name: slack }
-      - { name: sublime-text }
+#      - { name: sublime-text }
       - { name: spectacle }
-      - { name: sublime-text}
+#      - { name: sublime-text}
       - { name: the-unarchiver}
       - { name: vagrant }
       - { name: vagrant-manager }
