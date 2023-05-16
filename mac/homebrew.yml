@@ -11,6 +11,7 @@
       - { name: gh } #github cli tool
       - { name: git }
       - { name: gnu-sed }
+      - { name: gnupg }
       - { name: grep }
       - { name: htop }
       - { name: mas }
