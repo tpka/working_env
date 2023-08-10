@@ -3,7 +3,7 @@
 
   vars:
     homebrew_packages:
-      - { name: awscli }
+#      - { name: awscli }
       - { name: cdrtools }
       - { name: colordiff }
       - { name: coreutils }
@@ -15,7 +15,7 @@
       - { name: grep }
       - { name: htop }
       - { name: mas }
-      - { name: packer }
+#      - { name: packer }
       - { name: speedtest-cli }
       - { name: telnet }
       - { name: terraform }
