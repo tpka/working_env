@@ -3,18 +3,18 @@
 
   vars:
     homebrew_cask_packages:
-      - { name: 1password }
+#      - { name: 1password }
       - { name: alfred }
       - { name: android-file-transfer }
       - { name: bitwarden }
-      - { name: docker }
+#     - { name: docker }
       - { name: firefox }
       - { name: google-cloud-sdk }
       - { name: google-chrome }
       - { name: google-japanese-ime }
 #      - { name: google-drive}
       - { name: iterm2 } #terminal
-      - { name: keepassx }
+#      - { name: keepassx }
       - { name: notion } #utility
       - { name: onyx } #utility
       - { name: powershell } #utility
@@ -22,16 +22,16 @@
 #      - { name: qlmarkdown } #QuickLookup plugin
 #      - { name: qlstephen } #QuickLookup plugin
 #      - { name: quicklook-json } #QuickLookup plugin
-      - { name: royal-tsx }
+#     - { name: royal-tsx }
       - { name: skitch }
       - { name: slack }
 #      - { name: sublime-text }
       - { name: spectacle }
 #      - { name: sublime-text}
       - { name: the-unarchiver}
-      - { name: vagrant }
-      - { name: vagrant-manager }
-      - { name: virtualbox } 
+#     - { name: vagrant }
+#     - { name: vagrant-manager }
+#     - { name: virtualbox } 
       - { name: visual-studio-code }
       - { name: vlc }
 
