@@ -70,8 +70,9 @@ This documentation describes how to setup Mac for work. It's my personal prefere
 - Symbolic link for working directory
 	- $ ln -s /Users/<GDRIVE-PATH>/My\ Drive/600-code ~/code
 - Screenshot saved location
-	- https://fukatsu.tech/mac-screenshot-path
-	- % defaults write com.apple.screencapture location ~/Users/<GDRIVE-PATH>/My\ Drive/200-ongoing/;killall SystemUIServer
+	- [Macのスクリーンショットの保存先を変更する3つの方法](https://yama-mac.com/change_the_screenshot_save_location_and_file_format/#change_location)
+	- % defaults write com.apple.screencapture location /Users/<GDRIVE-PATH>/My\ Drive/200-ongoing 
+
 - .ssh directory
 	- fix permission
 ```
