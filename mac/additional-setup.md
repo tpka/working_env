@@ -22,6 +22,7 @@ This documentation describes how to setup Mac for work. It's my personal prefere
  	- Desktop & Dock:
 		- change position
 		- enable "automatically hide"
+  		- Hot Corners
 	- Displays:
 		- change resolution
 		- NightShift:on
@@ -92,6 +93,8 @@ This documentation describes how to setup Mac for work. It's my personal prefere
 	- Assign MacOS permissions
 		- Accessibility
 		- Full Disk Access
+    	- Hotkey:
+		- "Command double tap"
 - Spectacle
 	- Assign MacOS permissions
 		- Accessibility
