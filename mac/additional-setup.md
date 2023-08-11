@@ -4,39 +4,37 @@
 This documentation describes how to setup Mac for work. It's my personal preference :)
 
 ## Environment
-- Playbooks has tested in Oct/2021 with 
- 	- macOS Big Sur(ver.11.6)
-	- MacBook Pro(13-inch, 2020)
+- Playbooks has tested in Aug/2023 with 
+ 	- macOS Ventura(ver.13.5)
+	- MacBook Pro(13-inch, 2022)
 
 ## Mac setup
 
-- System Preference:
+- System Settings:
 	- Apple ID:
 		- Link Apple ID
-	- Dock:
-		- change position
-		- enable automatically hide
-	- Siri
-		- disable
 	- Notifications
 		- disable for some app
-	- Internet Accounts
-		- untick for acconts
-	- Wallet & Apple Pay
-		- disable
-	- Screen Time
+  	- Screen Time
 		- Turn off
-	- Printer:
-		- install from self-service.app
+ 	- Siri:
+		- disable
+ 	- Desktop & Dock:
+		- change position
+		- enable "automatically hide"
+	- Displays:
+		- change resolution
+		- NightShift:on
+  	- Touch ID:
+	- Wallet & Apple Pay:
+		- disable
 	- Keyboard:
 		- add Japanese(Hiragana Google)
 		- Shortcut/Input Sources: check on "Selct the previous input source" and "Seletct next source in input menu"
 	- Trackpad
 		- Tap to click: enable
 		- Track Speed: Fastest
-	- Displays:
-		- change resolution
-		- NightShift:on
+	- Printer:
 	- TimeMachine: setup
 
 - Finder:(Preference)
@@ -47,16 +45,14 @@ This documentation describes how to setup Mac for work. It's my personal prefere
 	- customize finder toolbar
 		- http://itea40.jp/technic/mac-beginners/finder-tool-bar-customize-app-icon/
 		- add app shortcut
-	- quicklook for markdown file
-		- https://github.com/toland/qlmarkdown
-		- $ brew cask install qlmarkdown
-	- quicklook for yaml
-		- http://www.evanlovely.com/utilities/quicklook-yaml/
-
+	- quicklook for markdown file(did not when setting up in 2023)
+		- https://github.com/toland/qlmarkdown, this is not maintained since 2020...
+		- $ brew install --cask qlmarkdown
+	- quicklook for yaml(did not when setting up in 2023)
+		- http://www.evanlovely.com/utilities/quicklook-yaml/, this is also old....
 
 ## Application setup
 
-- google Drive:
 - google Japanese input: setup
 	- change keyboard setting
 - browser bookmarks: restore
@@ -64,9 +60,6 @@ This documentation describes how to setup Mac for work. It's my personal prefere
 		- sync from iCloud
 	- Chrome
 	- Firefox
-- Outlook: setup
-	- just login with AzureAD
-- slack:
 - bash(.zshrc) alias
 	- .bash_profile, bashrc
 	- .zprofile, .zshrc
@@ -75,9 +68,10 @@ This documentation describes how to setup Mac for work. It's my personal prefere
 	- git clone
 	- .gitignore
 - Symbolic link for working directory
-	- $ ln -s /Volumes/GoogleDrive/My\ Drive/git ~/git
+	- $ ln -s /Users/<GDRIVE-PATH>/My\ Drive/600-code ~/code
 - Screenshot saved location
 	- https://fukatsu.tech/mac-screenshot-path
+	- % defaults write com.apple.screencapture location ~/Users/<GDRIVE-PATH>/My\ Drive/200-ongoing/;killall SystemUIServer
 - .ssh directory
 	- fix permission
 ```
@@ -93,9 +87,6 @@ This documentation describes how to setup Mac for work. It's my personal prefere
 		- https://superuser.com/questions/1127067/macos-keeps-asking-my-ssh-passphrase-since-i-updated-to-sierra
 - iterm2: setup
 	- enable Sync by suing github account
-- powercli: setup
-	- powershell is required. run command, "pwsh -version" to check.
-	- check this site: https://blogs.vmware.com/PowerCLI/2018/03/installing-powercli-10-0-0-macos.html
 - Alfred
 	- Assign MacOS permissions
 		- Accessibility
@@ -106,6 +97,3 @@ This documentation describes how to setup Mac for work. It's my personal prefere
 	- Enable Launch at login
 - Visual Studio Code
 	- Added later this section
-- virtual box:
-- docker: setup
-	- initial setup: docker mac client
