@@ -4,12 +4,12 @@
 This documentation describes step by step Mac automated provisioning process.
 
 ## Environment
-- Playbooks has tested in Oct/2021 with
-	- macOS Big Sur(ver.11.6)
-	- MacBook Pro(13-inch, 2020)
-	- ansible [core 2.11.5]
-	- python version = 3.9.7
-	- Homebrew 3.2.14
+- Playbooks has tested in Aug/2023 with
+	- macOS Ventura(ver.13.5)
+	- MacBook Pro(13-inch, 2022)
+	- ansible [core 2.15.2]
+	- python version = 3.11.4
+	- Homebrew 4.1.4
 
 ## Pre-Requirement
 
@@ -44,11 +44,11 @@ $ ansible-playbook -i hosts -vv xxx.yml
 ```
 - check status of ansible
 	- for cask installation, you may be asked your password.
-	- check failed installing app
 
 ## Additional Mac setup
 
-- Manuall setup is available here, https://github.com/tpka/working_env/blob/master/mac/additional-setup.md
+- The reference for additional mac setup is available here. This is totally my personal preference. :) 
+  	- https://github.com/tpka/working_env/blob/master/mac/additional-setup.md
 
 
 # Reference:
