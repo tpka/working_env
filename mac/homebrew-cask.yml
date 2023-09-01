@@ -7,6 +7,7 @@
       - { name: alfred }
       - { name: android-file-transfer }
       - { name: bitwarden }
+      - { name: brave-browser}
 #     - { name: docker }
       - { name: firefox }
       - { name: google-cloud-sdk }
@@ -22,6 +23,7 @@
 #      - { name: qlmarkdown } #QuickLookup plugin
 #      - { name: qlstephen } #QuickLookup plugin
 #      - { name: quicklook-json } #QuickLookup plugin
+      - { name: orbstack} # DockerDesktop alternative
 #     - { name: royal-tsx }
       - { name: skitch }
       - { name: slack }
