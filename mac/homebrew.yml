@@ -4,16 +4,17 @@
   vars:
     homebrew_packages:
 #      - { name: awscli }
-      - { name: cdrtools }
+#      - { name: cdrtools }
       - { name: colordiff }
       - { name: coreutils }
       - { name: curl }
-      - { name: gh } #github cli tool
+      - { name: gh }
       - { name: git }
       - { name: gnu-sed }
       - { name: gnupg }
       - { name: grep }
       - { name: htop }
+      - { name: jq }
       - { name: mas }
 #      - { name: packer }
       - { name: speedtest-cli }
@@ -23,15 +24,16 @@
       - { name: vim }
       - { name: watch }
       - { name: wget }
+      - { name: zsh }
 
   tasks:
     - name: homebrew update
-      homebrew:
-        update_homebrew: yes
+      community.general.homebrew:
+        update_homebrew: true
 
 # brew
     - name: homebrew packages install
-      homebrew:
+      community.general.homebrew:
         name: '{{ item.name }}'
         state: '{{ item.state | default("present") }}'
       with_items: '{{ homebrew_packages }}'
