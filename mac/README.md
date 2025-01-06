@@ -4,12 +4,12 @@
 This documentation describes step by step Mac automated provisioning process.
 
 ## Environment
-- Playbooks has tested in Aug/2023 with
-	- macOS Ventura(ver.13.5)
-	- MacBook Pro(13-inch, 2022)
-	- ansible [core 2.15.3]
-	- python version = 3.11.5
-	- Homebrew 4.1.7
+- Playbooks has tested in Jan/2025 with
+	- macOS Sequoia(ver.15.2)
+	- MacBook Air(13-inch, 2020)
+	- ansible [core 2.18.1]
+	- Python 3.13.1
+	- Homebrew 4.4.14
 
 ## Pre-Requirement
 
