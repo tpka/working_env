@@ -5,7 +5,7 @@
     homebrew_cask_packages:
 #      - { name: 1password }
       - { name: alfred }
-      - { name: android-file-transfer }
+#      - { name: android-file-transfer }
       - { name: bitwarden }
       - { name: brave-browser}
 #     - { name: docker }
@@ -13,22 +13,24 @@
       - { name: google-cloud-sdk }
       - { name: google-chrome }
       - { name: google-japanese-ime }
-#      - { name: google-drive}
+      - { name: google-drive}
       - { name: iterm2 } #terminal
 #      - { name: keepassx }
       - { name: notion } #utility
+      - { name: notion-calendar	} #utility
       - { name: onyx } #utility
       - { name: powershell } #utility
 #      - { name: qlcolorcode } #QuickLookup plugin
 #      - { name: qlmarkdown } #QuickLookup plugin
 #      - { name: qlstephen } #QuickLookup plugin
 #      - { name: quicklook-json } #QuickLookup plugin
-      - { name: orbstack} # DockerDesktop alternative
+#      - { name: orbstack} # DockerDesktop alternative
 #     - { name: royal-tsx }
-      - { name: skitch }
+      - { name: rectangle }
+#      - { name: skitch }
       - { name: slack }
 #      - { name: sublime-text }
-      - { name: spectacle }
+#      - { name: spectacle }
 #      - { name: sublime-text}
       - { name: the-unarchiver}
 #     - { name: vagrant }
@@ -39,12 +41,12 @@
 
   tasks:
     - name: homebrew update
-      homebrew:
-        update_homebrew: yes
+      community.general.homebrew:
+        update_homebrew: true
 
 # cask
     - name: homebrew cask packages install
-      homebrew_cask:
+      community.general.homebrew_cask:
         name: "{{ item.name }}"
         state: present
         install_options: 'appdir=/Applications'
